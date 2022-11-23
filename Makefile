@@ -6,7 +6,7 @@
 #    By: emajuri <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/24 16:39:22 by emajuri           #+#    #+#              #
-#    Updated: 2022/11/21 13:05:04 by emajuri          ###   ########.fr        #
+#    Updated: 2022/11/23 19:31:30 by emajuri          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,7 +54,7 @@ fclean: clean
 	rm -f $(NAME)
 
 %.o: %.c
-	cc $(FLAGS) -c -o $@ $^
+	cc $(WWW) -c -o $@ $^
 
 re: fclean all
 
