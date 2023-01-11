@@ -6,7 +6,7 @@
 /*   By: emajuri <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/21 12:56:23 by emajuri           #+#    #+#             */
-/*   Updated: 2022/11/24 14:31:31 by emajuri          ###   ########.fr       */
+/*   Updated: 2022/12/05 13:31:04 by emajuri          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ static size_t	count_len(unsigned long long n, int base)
 	size_t	count;
 
 	count = 1;
-	while (n > (base - 1))
+	while (n > (unsigned long long)(base - 1))
 	{
 		count++;
 		n /= base;

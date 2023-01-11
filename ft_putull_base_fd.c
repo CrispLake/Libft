@@ -6,7 +6,7 @@
 /*   By: emajuri <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 09:58:30 by emajuri           #+#    #+#             */
-/*   Updated: 2022/11/24 14:27:56 by emajuri          ###   ########.fr       */
+/*   Updated: 2022/12/05 13:31:39 by emajuri          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,11 @@ void	ft_putull_base_fd(unsigned long long n, int base, int fd)
 
 	if (base < 2 || base > 16)
 		return ;
-	if (n > (base - 1))
+	if (n > (unsigned long long)(base - 1))
 	{
 		ft_putull_base_fd(n / base, base, fd);
 		ft_putull_base_fd(n % base, base, fd);
 	}
-	if (n <= (base - 1) && n >= 0)
+	if (n <= (unsigned long long)(base - 1) && n >= 0)
 		ft_putchar_fd(str[n], fd);
 }
