@@ -6,7 +6,7 @@
 /*   By: emajuri <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 16:49:48 by emajuri           #+#    #+#             */
-/*   Updated: 2023/02/07 14:24:16 by emajuri          ###   ########.fr       */
+/*   Updated: 2023/02/10 11:54:01 by emajuri          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,6 +70,6 @@ char	*ft_ulltoa_base(unsigned long long n, int base);
 void	ft_putnbr_base_fd(int n, int base, int fd);
 void	ft_putull_base_fd(unsigned long long n, int base, int fd);
 int		ft_printf(const char *str, ...);
-int		ft_dir_check(char *filename);
+int		ft_printf_fd(int fd, const char *str, ...);
 
 #endif
