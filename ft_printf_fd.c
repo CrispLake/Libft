@@ -6,7 +6,7 @@
 /*   By: emajuri <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/22 12:13:18 by emajuri           #+#    #+#             */
-/*   Updated: 2023/02/10 10:55:12 by emajuri          ###   ########.fr       */
+/*   Updated: 2023/02/10 12:05:55 by emajuri          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include "libft.h"
 #include <unistd.h>
 
-static int	putull_base_cnt(unsigned long long n, int base, int caps, int fd)
+static int	putull_base(unsigned long long n, int base, int caps, int fd)
 {
 	const char	*str = "0123456789abcdef0123456789ABCDEF";
 	int			count;
@@ -37,7 +37,7 @@ static int	putull_base_cnt(unsigned long long n, int base, int caps, int fd)
 	return (count);
 }
 
-static int	putnbr_base_count(int n, int base, char *str, fd)
+static int	putnbr_base_count(int n, int base, char *str, int fd)
 {
 	long	nb;
 	int		count;
