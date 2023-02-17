@@ -6,7 +6,7 @@
 /*   By: emajuri <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 16:49:48 by emajuri           #+#    #+#             */
-/*   Updated: 2023/02/10 11:54:01 by emajuri          ###   ########.fr       */
+/*   Updated: 2023/02/17 15:12:52 by emajuri          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,5 +71,7 @@ void	ft_putnbr_base_fd(int n, int base, int fd);
 void	ft_putull_base_fd(unsigned long long n, int base, int fd);
 int		ft_printf(const char *str, ...);
 int		ft_printf_fd(int fd, const char *str, ...);
+char	**ft_split_quote(const char *str, int delim);
+char	**ft_split_one_malloc(const char *str, int delim);
 
 #endif
